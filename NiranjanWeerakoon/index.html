@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><!--<![endif]-->
+
+<!-- Mirrored from formtroopers.com/ by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 02 Nov 2013 13:28:35 GMT -->
+<head>
+	<meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+	<title>FormTroopers - Motion Graphics and Visual Effects.</title>
+	<meta name="description" content="FormTroopers is a Copenhagen based multi-disciplinary design studio established by creative duo Jeppe Bingestam and Toke Blicher Møller.">
+	<meta name="keywords" content="formtroopers, motion graphics, vfx, graphic design, visual effects, commercials, opening titles">
+	<meta name="author" content="FormTroopers">
+	<meta property="og:title" content="FormTroopers - Motion Design & Visual Effects"/>
+	<meta property="og:image" content="../www.formtroopers.com/images/logo_FB_Meta2.jpg"/>
+	<link rel='image_src' href='../www.formtroopers.com/images/thumbnails/logo_FB_Meta2.html' />
+	<meta property="og:site_name" content="FormTroopers.com"/>
+	<meta property="og:description" content="FormTroopers is a Copenhagen based multi-disciplinary design studio established by creative duo Jeppe Bingestam and Toke Blicher Møller."/>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="shortcut icon" href="images/favicon.png">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Retina Images -->
+	<script>if((window.devicePixelRatio===undefined?1:window.devicePixelRatio)>1)
+		document.cookie='HTTP_IS_RETINA%3d1%3bpath%3d/index.html';</script>
+	<!-- End Retina Images -->
+
+	<!-- jQuery -->
+	<script src="../ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+	<!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+	<!-- <link href='http://fonts.googleapis.com/css?family=Istok+Web:400,400italic' rel='stylesheet' type='text/css'> -->
+	<link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
+    <!--<link href='http://fonts.googleapis.com/css?family=Belgrano' rel='stylesheet' type='text/css'>-->
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="stylesheets/loader.css">
+
+	<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/grid.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+
+
+	<!-- <link rel="stylesheet" type="text/css" href="stylesheets/colors/ruby-red.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="stylesheets/colors/aqua-blue.css"> -->
+	 <!-- <link rel="stylesheet" type="text/css" href="stylesheets/colors/mint-green.css">  -->
+	<!-- <link rel="stylesheet" type="text/css" href="stylesheets/colors/rose-pink.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="stylesheets/colors/sunflower-yellow.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="stylesheets/colors/jeans.css"> -->
+	<link rel="stylesheet" type="text/css" href="stylesheets/colors/grape.css">
+	<!-- <link rel="stylesheet" type="text/css" href="stylesheets/colors/grass.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="stylesheets/colors/lavander.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="stylesheets/colors/gray.css"> -->
+
+	<link rel="stylesheet" type="text/css" href="stylesheets/animations.css">
+
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" href="stylesheets/ie.css" />
+	<![endif]-->
+		<!-- !GOOGLE MAPS -->
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<script type="text/javascript">
+			function initialize() {
+				var latlng = new google.maps.LatLng(55.6775, 12.575475);
+				var settings = {
+					zoom: 16,
+					center: latlng,
+					mapTypeControl: true,
+					mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.MENU},
+					navigationControl: false,
+					navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+					mapTypeId: google.maps.MapTypeId.ROADMAP};
+				var map = new google.maps.Map(document.getElementById("map_canvas"), settings);
+				var styles = [
+ 						 {
+    						stylers: [
+     						 { hue: "#ed5565" },
+     						 { saturation: -70 }
+   							 ]
+ 							 }
+						];
+
+map.setOptions({styles: styles});
+				var contentString = '<div id="content">'+
+					'<div id="siteNotice">'+
+					'</div>'+
+					'<h4 id="firstHeading" class="firstHeading"><font color="#ed5565">FormTroopers</h4>'+
+					'<div id="bodyContent">'+
+					'<p>Motion Design & VFX</p>'+
+					'</div>'+
+					'</div>';
+				var infowindow = new google.maps.InfoWindow({
+					content: contentString
+				});
+				
+				var companyImage = new google.maps.MarkerImage('images/logoMaps.png',
+					new google.maps.Size(100,50),
+					new google.maps.Point(0,0),
+					new google.maps.Point(50,50));
+
+				var companyShadow = new google.maps.MarkerImage('images/skygge.png',
+					new google.maps.Size(130,50),
+					new google.maps.Point(0,0),
+					new google.maps.Point(50, 50));
+					
+
+				var companyPos = new google.maps.LatLng(55.677461, 12.57547);
+
+				var companyMarker = new google.maps.Marker({
+					position: companyPos,
+					map: map,
+					icon: companyImage,
+					shadow: companyShadow,
+					title:"FormTroopers",
+					zIndex: 3});
+				
+				/*
+var trainImage = new google.maps.MarkerImage('images/train.png',
+					new google.maps.Size(50,50),
+					new google.maps.Point(0,0),
+					new google.maps.Point(50,50)
+				);
+
+				var trainShadow = new google.maps.MarkerImage('images/train_shadow.png',
+					new google.maps.Size(70,50),
+					new google.maps.Point(0,0),
+					new google.maps.Point(60, 50)
+				);
+
+				var trainPos = new google.maps.LatLng(57.0429, 9.9173);
+
+				var trainMarker = new google.maps.Marker({
+					position: trainPos,
+					map: map,
+					icon: trainImage,
+					shadow: trainShadow,
+					title:"Train Station",
+					zIndex: 2
+				});
+
+				var parkingImage = new google.maps.MarkerImage('images/parking.png',
+					new google.maps.Size(50,50),
+					new google.maps.Point(0,0),
+					new google.maps.Point(50,50)
+				);
+
+				var parkingShadow = new google.maps.MarkerImage('images/parking_shadow.png',
+					new google.maps.Size(70,50),
+					new google.maps.Point(0,0),
+					new google.maps.Point(60, 50)
+				);
+
+				var parkingPos = new google.maps.LatLng(57.0437, 9.9147);
+
+				var parkingMarker = new google.maps.Marker({
+					position: parkingPos,
+					map: map,
+					icon: parkingImage,
+					shadow: parkingShadow,
+					title:"Parking Lot",
+					zIndex: 1
+				});
+*/
+				
+				google.maps.event.addListener(companyMarker, 'click', function() {
+					infowindow.open(map,companyMarker);
+				});
+			}
+		</script>
+		
+
+</head>
+
+<body class="royal_loader">
+
+	<!-- Begin Navigation -->
+	<nav class="clearfix">
+
+		<!-- Logo -->
+		<div class="logo">
+			<a id="top" href="#"><img src="images/logo.png" width="150" height="30" alt="Visia"></a>
+		</div>
+
+		<!-- Mobile Nav Button -->
+		<button type="button" class="nav-button" data-toggle="collapse" data-target=".nav-content">
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    </button>
+
+	    <!-- Navigation Links -->
+	    <div class="navigation">
+			<ul class="nav-content">
+				<li><a class="active" href="#section1">Hello</a></li>
+				<li><a href="#section4">Work</a></li>
+				<li><a href="#section2">About</a></li>
+				<li><a href="#section3">Services</a></li>
+				<li><a href="#section5">Contact</a></li>
+				<li><a href="http://formtroopers.tumblr.com/" target="_blank">Blog</a></li>
+			</ul>
+		</div>
+
+	</nav>
+	<!-- End Navigation -->	
+	<!-- !HOMEPAGE -->
+	<!-- Begin Hero -->
+    <section id="section1" class="parallax-bg1 parallax colored clearfix">
+		<!--<div class="content dark padded container">-->
+        <div class="content container">
+
+			<!-- Text -->
+			<div class="title grid-full">
+			<!-- <img class="animated slide"  data-appear-bottom-offset="10" src="images/logo_myown.png"> -->
+			<img src="images/logo_myown.png">
+				<class="sub-heading">
+				<ul class="call-to-action">
+				<li><h6><a class="button no-border" href="#section3">- Want to know what we can do for you?</a></h6></li>
+			</ul>
+				<!-- <h6>We're a multi-disciplinary design studio based Copenhagen</h6><br> -->
+			</div>
+
+		 	<!-- Buttons -->
+			<!--
+<ul class="call-to-action">
+				<li><a class="button no-border" href="#section3">- Want to know what we can do for you?</a></li><br><br>
+			</ul>
+-->
+
+		</div>
+		
+	</section>
+	
+	<!-- End Hero -->
+	<!-- !WORK -->
+	<!-- Begin About -->
+    <section id="section4" class="portfolio clearfix">
+
+		<!-- Title -->
+		<div class="content container">
+			<div class="title grid-full">
+				<h2>Our work</h2>
+				<span class="border"></span>
+			</div>
+		</div>
+
+		<!-- Ajax Section -->
+		<div class="ajax-section container">
+			<div class="loader"></div>
+			<!--<div class="project-navigation">
+				<ul>
+					<li class="nextProject"><a href="#"></a></li>
+					<li class="prevProject"><a href="#"></a></li>
+				</ul>
+			</div>-->
+			<div class="closeProject">
+				<a href="#"><i class="icon-remove"></i></a>               
+			</div>
+            <div class="ajax-content clearfix"></div>
+		</div>
+		<!-- End Ajax Section -->
+
+		<!-- Thumbnails -->
+		<ul class="projectlist clearfix">
+			<li class="project">
+				<a href="#!projects/reel.html">
+					<img src="images/thumbnails/reel.jpg" alt="thumbnail">
+					<div class="projectinfo">
+						<div class="meta">
+							<h4>Montage ´13</h4>
+							<h6><em>showreel</em></h6>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li class="project">
+				<a href="#!projects/spies.html">
+					<img src="images/thumbnails/spies.jpg" alt="thumbnail">
+					<div class="projectinfo">
+						<div class="meta">
+							<h4>Spies & Glistrup</h4>
+							<h6><em>vfx / title design</em></h6>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li class="project">
+				<a href="#!projects/tva.html">
+					<img src="images/thumbnails/tva.jpg" alt="thumbnail">
+					<div class="projectinfo">
+						<div class="meta">
+							<h4>TV Avisen</h4>
+							<h6><em>design / animation</em></h6>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li class="project">
+				<a href="#!projects/f1.html">
+					<img src="images/thumbnails/f1.jpg" alt="thumbnail">
+					<div class="projectinfo">
+						<div class="meta">
+							<h4>Formula 1</h4>
+							<h6><em>design / animation</em></h6>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li class="project">
+				<a href="#!projects/paperfold.html">
+					<img src="images/thumbnails/paperfold.jpg" alt="thumbnail">
+					<div class="projectinfo">
+						<div class="meta">
+							<h4>Paperfold</h4>
+							<h6><em>design / animation / sound</em></h6>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li class="project">
+				<a href="#!projects/adidas.html">
+					<img src="images/thumbnails/adidas.jpg" alt="thumbnail">
+					<div class="projectinfo">
+						<div class="meta">
+							<h4>Adidas</h4>
+							<h6><em>branding / animation</em></h6>
+						</div>
+					</div>
+				</a>
+			</li>
+            <li class="project">
+				<a href="#!projects/beast.html">
+					<img src="images/thumbnails/beast.jpg" alt="thumbnail">
+					<div class="projectinfo">
+						<div class="meta">
+							<h4>Beast</h4>
+							<h6><em>title design / vfx</em></h6>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li class="project">
+				<a href="#!projects/abgi.html">
+					<img src="images/thumbnails/abgi.jpg" alt="thumbnail">
+					<div class="projectinfo">
+						<div class="meta">
+							<h4>Everything will be fine</h4>
+							<h6><em>title design</em></h6>
+						</div>
+					</div>
+				</a>
+			</li>
+            <li class="project">
+				<a href="#!projects/drhd.html">
+					<img src="images/thumbnails/drhd.jpg" alt="thumbnail">
+					<div class="projectinfo">
+						<div class="meta">
+							<h4>DR HD</h4>
+							<h6><em>branding / animation</em></h6>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li class="project">
+				<a href="#!projects/om.html">
+					<img src="images/thumbnails/om.jpg" alt="thumbnail">
+					<div class="projectinfo">
+						<div class="meta">
+							<h4>Ole Mathiesen</h4>
+							<h6><em>design / animation / sound</em></h6>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li class="project">
+				<a href="#!projects/kill.html">
+					<img src="images/thumbnails/kill.jpg" alt="thumbnail">
+					<div class="projectinfo">
+						<div class="meta">
+							<h4>Kill</h4>
+							<h6><em>vfx / color grade</em></h6>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li class="project">
+				<a href="#!projects/dicte.html">
+					<img src="images/thumbnails/dicte.jpg" alt="thumbnail">
+					<div class="projectinfo">
+						<div class="meta">
+							<h4>Dicte</h4>
+							<h6><em>title design / color grade</em></h6>
+						</div>
+					</div>
+				</a>
+			</li>
+		</ul>
+
+	</section>
+	
+	<!-- End About -->
+	<!-- !ABOUT FT -->
+	<!-- Begin Services -->
+	 <section id="section2" class="content container">
+
+		<!-- Text -->
+		<div class="title grid-full">
+			<h2>About us</h2>
+			<span class="border"></span>
+			<p class="sub-heading"><font color="#ed5565">FormTroopers <font color="#999">is a Copenhagen based multi-disciplinary design studio established by creative duo<br>Jeppe Bingestam and Toke Blicher Møller. Since 2009 we've directed and produced work that combine<br><font color="#ed5565">design, animation, live action <font color="#999">and <font color="#ed5565">visual effects<font color="#999">.<br><br><font color="#999">At the core of all our projects is the design. Our goal is always to make whatever we are working on look great - and always using whatever techniques and media that are appropriate.<br><br>Over the years we have worked on <font color="#ed5565">Commercials, Motion Pictures <font color="#999">and <font color="#ed5565">Television <font color="#999">for clients such as <font color="#ed5565">Adidas, Formula 1, Pepsi, Discovery Channel and MTV <font color="#999">- just to name a few.<br><br>We have a sincere desire to create and <font color="#ed5565">we love what we do,<font color="#999"><br>and so we take on every job with absolute commitment.</p>
+		</div>
+
+		<!-- Image -->
+		<img class="animated slide"  data-appear-bottom-offset="100" src="images/about.jpg" alt="About FormTrooeprs">
+	</section>
+	<!-- End Services -->
+	<!-- !SERVICES -->
+	<!-- Begin Portfolio -->
+    <section id="section3" class="parallax-bg1 parallax colored clearfix">
+		<!--<div class="content dark padded container">-->
+        <div class="content container">
+
+			<!-- Text -->
+			<div class="title grid-full">
+				<h2>Services</h2>
+				<span class="border"></span>
+				<p class="sub-heading">We can execute a production <font color="#ed5565">entirely in house <font color="#999">from the <font color="#ed5565">board phase<font color="#999">, to the <font color="#ed5565">shoot<font color="#999">, through the <font color="#ed5565">animatic<font color="#999"> to <font color="#ed5565">VFX, <font color="#ed5565">animation, <font color="#ed5565">editorial <font color="#999">all the way to <font color="#ed5565">final delivery<font color="#999">. The following is a more detailed overview of our core services.</p>
+			</div>
+			<!-- <div class="project-info clearfix"> -->
+			<div class="grid-2">
+				<h6>Design / Concept</h6>
+				<p>This is where it all starts. Some clients come to us with what they want to produce. In other instances, we will write <font color="#ed5565">treatments, scripts<font color="#999">, or create <font color="#ed5565">storyboards<font color="#999"> to <font color="#ed5565">illustrate a concept<font color="#999">. No matter how it is executed, it always starts with an idea<font color="#999">.</p>
+                <!-- <a href="#">View example case →<br><br><br></a> -->
+			</div>
+			<div class="grid-2">
+				<h6>Motion Graphics / VFX</h6>
+				<p>This is where it all comes together. We are skilled in <font color="#ed5565">2D and 3D animation, compositing and visual effects<font color="#999">. Whatever the necessary execution<font color="#ed5565"><br>- we put it in motion.</p>
+                <!-- <a href="#!projects/tva.html">View example case →</a> -->
+			</div>
+			<div class="grid-2">
+				<h6>Live Action / Post Production</h6>
+				<p>In addition to being hands-on in the design and animation process, we can provide <font color="#ed5565">on-set supervision<font color="#999"> or <font color="#ed5565">directing<font color="#999">. Apart from more specialized VFX work, we also provide general <font color="#ed5565">colorgrading<font color="#999">, as well as <font color="#ed5565">editing<font color="#999">.</p><br><br>
+				<!-- <a href="#">View example case →</a> -->
+			</div>
+		</div>
+		
+
+					
+
+			</ul>
+		</div>
+		
+	</section>
+   
+	
+	<!-- End Portfolio -->
+	<!-- !CONTACT -->
+	<!-- Begin Team -->
+	<section id="section5" class="content container">
+		<div class="title grid-full">
+			<h2>Contact Info</h2>
+			<span class="border"></span><br><br><br>
+		</div>
+		<ul class="team-list clearfix">
+       			<div class="name">
+			<!--<li class="team-member grid-2">-->
+                <li class="team-member grid-2">
+						<img src="images/icons/locationBlack.png" alt="location" width="20" height="20">
+                        <h6><em>address</em></h6>
+						<h6>Kompagnistræde 14D<br>DK-1208 Copenhagen K</h6>
+				</li>
+			<!--</li>-->
+            <li class="grid-2">
+            		<div class="name">
+					<img src="images/icons/telephoneBlack.png" alt="telephone" width="20" height="20">
+                    <h6><em>telephone</em></h6>
+					<h6>(+45) 32 117 118</h6>
+				</li>
+			<li class="grid-2">
+            		<div class="name">
+					<a id="contact-open" href="#">
+						<img src="images/icons/mailBlack.png" alt="mail" width="20" height="20">
+                        <h6><em>contact form</em></h6>
+						<h6>hello(at)formtroopers.com</h6>
+					</a>
+				</li>      
+		</ul>
+        <ul class="team-list clearfix">
+		<li class="team-member grid-half">
+        		<img src="images/icons/staffBlack.png" alt="telephone" width="20" height="20">
+				<div class="name">
+					<h6><em>partner</em></h6>
+					<h6>Jeppe Bingestam</h6>
+				</div>
+				<p><a href="mailto:jeppe@formtroopers.com">jeppe(at)formtroopers.com</a></p>
+				<!--<ul class="social-list">
+					<li><a href="http://www.google.com" target="_blank"><i class="social-icon google small"></i></a></li>
+					<li><a href="http://www.linkedin.com" target="_blank"><i class="social-icon linkedin small"></i></a></li>
+				</ul>-->
+			</li>	
+		<li class="team-member grid-half">
+        		<img src="images/icons/staffBlack.png" alt="telephone" width="20" height="20">
+				<div class="name">
+					<h6><em>partner</em></h6>
+					<h6>Toke Blicher Møller</h6>	
+				</div>
+				<p><a href="mailto:toke@formtroopers.com">toke(at)formtroopers.com</a></p>
+				<!--<ul class="social-list">
+					<li><a href="http://www.google.com" target="_blank"><i class="social-icon google small"></i></a></li>
+					<li><a href="http://www.linkedin.com" target="_blank"><i class="social-icon linkedin small"></i></a></li>
+				</ul>	-->
+			</li>	
+		</ul>
+        <!--<div class="copyright grid-full"><h6>CVR: 28369832 // Bank:  Jyske Bank // Reg.no: 5065 // Account no: 0002836987</h6></div>-->
+		<!--<img class="animated slide" src="images/team.jpg" alt="team" data-appear-bottom-offset="150">-->
+        <body onload="initialize()">
+		<div id="map_canvas" style="width:960px; height:350px"></div>
+	
+	</section>
+	<!-- End Team -->
+
+	<!-- Begin Footer -->
+	<!-- !SOCIAL LINKS -->
+	<footer id="footer" class="clearfix">
+		<section class="parallax-bg3 parallax black clearfix">
+			<!-- <div class="container"> -->
+				
+			<!-- Social Links -->
+			<ul class="social-links grid-full">
+            	<!-- <h6>FormTroopers around the net</h6> -->
+				<li><a href="https://www.facebook.com/pages/FormTroopers/439883266031225" target="_blank"><img src="images/icons/facebook-large.png" alt="facebook" width="36" height="36"></a></li>
+				
+                <!--Twitter-->
+                <!--<li><a href="http://twitter.com" target="_blank"><img src="images/icons/twitter-large.png" alt="twitter" width="36" height="36"></a></li>-->
+                
+
+				 <!--Tumblr-->
+				<li><a href="http://formtroopers.tumblr.com/" target="_blank"><img src="images/icons/tumblr-large.png" alt="dribbble" width="36" height="36"></a></li>
+				
+
+				<!-- LinkedIn-->
+				<li><a href="http://www.linkedin.com/company/formtroopers" target="_blank"><img src="images/icons/linkedin-large.png" alt="linkedin" width="36" height="36"></a></li>
+				
+
+				<!-- YouTube
+				<li><a href="http://youtube.com" target="_blank"><img src="images/icons/youtube-large.png" alt="youtube" width="36" height="36"></a></li>
+				-->
+
+				<!-- Vimeo-->
+				<li><a href="https://vimeo.com/formtroopers" target="_blank"><img src="images/icons/vimeo-large.png" alt="vimeo" width="36" height="36"></a></li>
+				
+
+				<!-- Flickr-->
+				<li><a href="http://www.flickr.com/photos/formtroopers/" target="_blank"><img src="images/icons/flickr-large.png" alt="flickr" width="36" height="36"></a></li>
+				
+
+				<!-- RSS
+				<li><a href="http://rss.com" target="_blank"><img src="images/icons/rss-large.png" alt="rss" width="36" height="36"></a></li>
+				-->
+
+				<!-- Google Plus
+				<li><a href="http://google.com" target="_blank"><img src="images/icons/google-large.png" alt="google" width="36" height="36"></a></li>
+				-->
+			</ul>
+
+			<!-- Copyright Info -->
+			<div class="title grid-full">
+			<img src="images/logo_myown.png">
+				<class="sub-heading">
+				<h6>Motion Graphics & Visual Effects</h6><br>
+			</div>
+			<div class="copyright grid-full"><font color="#ffffff"><h6><small><font color="#ffffff">©2013 FormTroopers. All rights reserved.<br><br><br><br></small></h6></div>
+			
+		</div>
+		<!-- Contact Form -->
+		<div id="contact-form" class="dark clearfix">
+			<div class="container">
+				<div class="contact-heading grid-full">
+					<h3>Get in touch</h3>
+					<span class="border"></span>
+				</div>
+			</div>
+
+			<form method="post" action="http://formtroopers.com/post.php" name="contactform" id="contactform" class="container">
+				<fieldset>
+					<div class="form-field grid-half">
+						<label for="name">Name</label>
+						<span><input type="text" name="name" id="name" /></span>
+					</div>
+					<div class="form-field grid-half">
+						<label for="email">Email</label>
+						<span><input type="email" name="email" id="email" /></span>
+					</div>
+					<div class="form-field grid-full">
+						<label for="message">Message</label>
+						<span><textarea name="message" id="message"></textarea></span>
+					</div>
+				</fieldset>
+				<div class="form-click grid-full">
+					<span><input type="submit" name="submit" value="Send" id="submit" /></span>
+				</div>
+				<div id="alert" class="grid-full"></div>
+			</form>	
+		</div>
+
+		
+	</footer>
+	<!-- End Footer -->
+
+	<!-- Javascript -->
+	<script src="javascript/royal-preloader.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+
+		//Replace with your own image's paths
+	   var images = {
+	        'parallax1':    'http://www.formtroopers.com/images/parallax-bg1.jpg',
+	        /* 'parallax2':    'http://www.formtroopers.com/demo/visia/images/services-red.jpg', */
+	        'parallax3':    'http://www.formtroopers.com/images/parallax-bg3.jpg',
+	        'About Us': 	'http://www.formtroopers.com/images/about.jpg',
+	        'MyLogo':     	'http://www.formtroopers.com/images/logo_myown.png',
+	        'Thumb1':   	'http://www.formtroopers.com/images/thumbnails/spies.jpg',
+	        'Thumb2':   	'http://www.formtroopers.com/images/thumbnails/tva.jpg',
+	        'Thumb3':   	'http://www.formtroopers.com/images/thumbnails/f1.jpg',
+	        'Thumb4':   	'http://www.formtroopers.com/images/thumbnails/paperfold.jpg',
+	        'Thumb5':   	'http://www.formtroopers.com/images/thumbnails/adidas.jpg',
+	        'Thumb6':   	'http://www.formtroopers.com/images/thumbnails/beast.jpg',
+	        'Thumb7':   	'http://www.formtroopers.com/images/thumbnails/abgi.jpg',
+	        'Thumb8':   	'http://www.formtroopers.com/images/thumbnails/reel.jpg'
+	    };
+	 
+	    // config
+	    Royal_Preloader.config({
+	        mode:       'number',
+	        images:     images,
+	        timeout:    10,
+	        showInfo:   false,
+	        background: ['#000']
+	    });
+	</script>
+	<script src="javascript/smoothscroll.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/waypoints.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/parallax.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/navigation.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/jquery.easing.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/jquery.fittext.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/jquery.localscroll.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/jquery.scrollto.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/jquery.appear.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/jquery.waitforimages.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/jquery.bxslider.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/jquery.fitvids.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/main.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+
+
+<!-- Mirrored from formtroopers.com/ by HTTrack Website Copier/3.x [XR&CO'2013], Sat, 02 Nov 2013 13:29:12 GMT -->
+</html>
